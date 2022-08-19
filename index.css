@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("netflix\ wallpaper.jpg");
+    background-position: center top;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+#header > img {
+    width: 10em;
+    margin-left: 2.5em;
+}
+#header > button {
+    width: 8em;
+    height: 3em;
+    margin-top: 2.5em;
+    margin-right: 4em;
+    background-color: #e50914;
+    border-radius: 5px;
+    border: none;
+}
+button > a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+}
+#home-page {
+    text-align: center;
+    margin-top: 9em;
+    padding-bottom: 11em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home-page > h3 {
+    font-size: 3.2em;
+    text-align: center;
+    width: 15em;
+    line-height: 1;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+}
+.para-one {
+    font-size: 1.7em;
+    padding-bottom: 0.7em;
+}
+.para-two {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+.mail {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+input {
+    width: 30em;
+    padding: 1em;
+}
+.mail > button, .form > button {
+    width: 10em;
+    background-color: #e50914;
+    padding: 1em;
+    font-size: 1.2em;
+    border: none;
+    color: #fff;
+}
+#section-two, #section-three, #section-four, #section-five {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    align-items: center;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+#text-div-one > h4, #text-div-two > h4, #text-div-four > h4, #text-div-three > h4 {
+    font-size: 2.8em;
+    margin-bottom: 0.8em;
+}
+#text-div-one > p, #text-div-two > p, #text-div-four > p {
+    font-size: 1.3em;
+    width: 28em;
+}
+#text-div-three > p {
+    width: 28em;
+    font-size: 1.3em;
+}
+#section-four {
+    justify-content: space-around;
+}
+#section-three, #section-four {
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+#img-div-two {
+    width: 49%;
+}
+#img-div-three {
+    width: 40%;
+    margin-left: 6em;
+}
+#img-div-two > img, #img-div-three > img {
+    width: 100%;
+}
+#text-div-two {
+    width: 40%;
+    margin-left: 3em;
+}
+#text-div-three {
+    width: 40%;
+}
+.accordion {
+    width: 800px;
+    margin: 90px auto;
+    padding: 45px 45px;
+}
+.accordion > h2 {
+    font-size: 2.5em;
+    text-decoration: underline;
+    margin-bottom: 2em;
+}
+.accordion .container {
+    position: relative;
+    margin: 10px 10px;
+}
+.accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+.accordion .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+}
+.accordion .content {
+    position: relative;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 700px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+}
+.accordion .container.active .content {
+    height: 150px;
+}
+.accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}
+.form {
+    text-align: center;
+    padding-bottom: 4em;
+}
+.form > input {
+    width: 30em;
+    padding: 1.5em;
+    margin-top: 1em;
+}
+.form-para {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    font-size: 0.9em;
+    color: rgb(134, 122, 122);
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.grid-one, .grid-two, .grid-three, .grid-four {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5em;
+}
+.grid-one > a, .grid-two > a, .grid-three > a, .grid-four > a {
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: rgb(134, 122, 122);
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.line {
+    width: 100%;
+    height: 0.5em;
+    background-color: rgb(78, 74, 74);
+}
