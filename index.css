@@ -289,11 +289,16 @@ a:hover {
     #text-div-three > h4 {
         width: 100%;
     }
-    #text-div-one > p, #text-div-two > p, #text-div-three > p, #text-div-four > p {
+    #text-div-one > p, #text-div-four > p {
         font-size: 1em;
         width: 20em;
         text-align: center;
         margin: 0 auto;
+    }
+    #text-div-two > p, #text-div-three > p {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
     }
     #text-div-two, #text-div-three {
         margin-left: 0;
@@ -335,6 +340,8 @@ a:hover {
     .form {
         text-align: center;
         padding-bottom: 4em;
+        display: flex;
+        flex-direction: column;
     }
     .form > input {
         padding: 0.8em;
