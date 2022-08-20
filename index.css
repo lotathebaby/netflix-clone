@@ -5,12 +5,13 @@
 }
 body {
     background-color: #000;
+    overflow-x: hidden;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 #home {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("netflix\ wallpaper.jpg");
-    background-position: center top;
+    background-position: center;
 }
 #header {
     display: flex;
@@ -30,7 +31,7 @@ body {
     border: none;
 }
 button > a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     color: #fff;
     text-decoration: none;
@@ -39,12 +40,12 @@ button > a {
     text-align: center;
     margin-top: 9em;
     padding-bottom: 11em;
-    font-family: Arial, Helvetica, sans-serif;
 }
 #home-page > h3 {
     font-size: 3.2em;
     text-align: center;
     width: 15em;
+    font-weight: 600;
     line-height: 1;
     margin: 0 auto;
     padding-bottom: 0.5em;
@@ -65,6 +66,7 @@ button > a {
 input {
     width: 30em;
     padding: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
 .mail > button, .form > button {
     width: 10em;
@@ -73,6 +75,7 @@ input {
     font-size: 1.2em;
     border: none;
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
 }
 #section-two, #section-three, #section-four, #section-five {
     display: grid;
@@ -214,3 +217,147 @@ a:hover {
     height: 0.5em;
     background-color: rgb(78, 74, 74);
 }
+@media screen and (min-width: 350px) and (max-width: 560px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    #header > img {
+        width: 8em;
+        margin-left: 1.0em;
+    }
+    #header > button {
+        width: 5em;
+        height: 2em;
+        margin-top: 2em;
+        margin-right: 1em;
+    }
+    button > a {
+        font-size: 1.0em;
+    }
+    #home-page {
+        margin-top: 4em;
+        padding-bottom: 5em;
+    }
+    #home-page > h3 {
+        font-size: 1.8em;
+    }
+    .para-one {
+        font-size: 1.2em;
+        padding-bottom: 0.7em;
+    }
+    .para-two {
+        font-size: 1.2em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .mail {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input {
+        width: 90%;
+        margin: 0 auto 1em;
+        padding: 0.8em;
+    }
+    .mail > button, .form > button {
+        width: 7em;
+        padding: 0.4em;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+    #section-two, #section-three, #section-four, #section-five {
+        margin: 3em 5em;
+    }
+    #section-two, #section-four {
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+    #section-three, #section-five {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #text-div-one > h4, #text-div-two > h4, #text-div-four > h4, #text-div-three > h4 {
+        font-size: 1.8em;
+        margin-bottom: 0.8em;
+        text-align: center;
+        margin-top: 0em;
+    }
+    #text-div-three > h4 {
+        width: 100%;
+    }
+    #text-div-one > p, #text-div-two > p, #text-div-three > p, #text-div-four > p {
+        font-size: 1em;
+        width: 20em;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #text-div-two, #text-div-three {
+        margin-left: 0;
+        width: 100%;
+    }
+    #section-three, #section-four {
+        padding-bottom: 0em;
+        padding-top: 0em;
+    }
+    #img-div-one, #img-div-two, #img-div-three, #img-div-four {
+        width: 90%;
+        margin-top: 2em;
+    }
+    #img-div-three {
+        margin-left: 1em;
+    }
+    #img-div-one > img, #img-div-two > img, #img-div-three > img, #img-div-four > img {
+        width: 100%;
+    }
+    .accordion {
+        width: 80%;
+        margin: 2em auto;
+        padding: 5px 5px;
+    }
+    .accordion > h2 {
+        font-size: 1.5em;
+        text-decoration: underline;
+    }
+    .accordion .label {
+        font-size: 1.1em;
+    }
+    .accordion .content {
+        width: 90%;
+    }
+    .accordion .container.active .content {
+        height: 200px;
+        font-size: 1em;
+    }
+    .form {
+        text-align: center;
+        padding-bottom: 4em;
+    }
+    .form > input {
+        padding: 0.8em;
+        margin-top: 0.3em;
+    }
+    .form-para {
+        font-size: 1em;
+        padding-bottom: 0.8em;
+        width: 60%;
+        margin: 0 auto;
+    }
+    footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        font-size: 0.8em;
+        color: rgb(66, 60, 60);
+    }
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2em;
+    }
+} 
